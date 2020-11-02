@@ -1,0 +1,17 @@
+@import "../../../styles/settings/spaces";
+@import "../../../styles/settings/colors";
+@import "../../../styles/settings/types";
+
+.button {
+  padding: $space * 1.25 $space;
+  border: solid 1px $color-dark-primary;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: $font-size-md;
+  min-width: 127px;
+  text-align: left;
+
+  &--primary {
+    background-color: $color-dark-primary
+  }
+}

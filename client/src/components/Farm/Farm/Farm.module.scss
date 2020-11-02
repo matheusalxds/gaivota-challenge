@@ -1,0 +1,7 @@
+@import "../../../styles/settings/spaces";
+
+.farm {
+  display: flex;
+  justify-content: center;
+  margin-top: $space * 10;
+}

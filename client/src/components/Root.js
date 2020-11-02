@@ -1,12 +1,12 @@
 import "react-hot-loader/patch";
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
-import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import App from "./common/App/App";
 
 const Root = () => {
   return (
     <BrowserRouter>
-      <Route path="/" component={App} />
+      <App />
     </BrowserRouter>
   );
 };

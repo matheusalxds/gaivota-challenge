@@ -3,7 +3,9 @@ import { render } from "react-dom";
 import { AppContainer } from "react-hot-loader";
 import Root from "./components/Root";
 import * as serviceWorker from "./serviceWorker";
-import "./styles/index.css";
+
+// import global styles
+import "./styles/main.scss";
 
 const root = document.getElementById("root");
 
@@ -26,7 +28,4 @@ if (module.hot) {
   });
 }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();

@@ -1,0 +1,7 @@
+.align {
+  display: flex;
+
+  &--end {
+    justify-content: flex-end;
+  }
+}

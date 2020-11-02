@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Route, Redirect, withRouter } from "react-router-dom";
-import { isAuthenticated } from "../auth";
-import Home from "../routes/home/";
-import Login from "../routes/login/";
+import { Redirect, withRouter } from "react-router-dom";
 import { PropTypes } from "prop-types";
 
-const App = props => {
-  const { location, match } = props;
+import { isAuthenticated } from "../../../auth";
+
+const Authentication = props => {
+  const { location, children } = props;
   const [logged, setLogged] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -26,7 +25,7 @@ const App = props => {
   };
 
   useEffect(() => {
-    authUser();
+    authUser().then();
   }, []);
 
   if (loading) return null;
@@ -45,19 +44,12 @@ const App = props => {
     return <Redirect to="/app/home" />;
   }
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Route path={`${match.url}app/home`} component={Home} />
-        <Route path={`${match.url}login`} component={Login} />
-      </header>
-    </div>
-  );
+  return children;
 };
 
-App.propTypes = {
+Authentication.propTypes = {
   location: PropTypes.object,
   match: PropTypes.object
 };
 
-export default withRouter(App);
+export default withRouter(Authentication);

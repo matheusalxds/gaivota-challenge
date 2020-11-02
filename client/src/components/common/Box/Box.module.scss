@@ -1,0 +1,11 @@
+@import "../../../styles/settings/colors";
+@import "../../../styles/settings/spaces";
+
+.box {
+  padding: $space * 2;
+  border: solid 1px $color-primary;
+
+  &--darker {
+    border: solid 1px $color-dark-primary;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../styles/settings/colors";
+
+.map {
+  width: 635px;
+  height: 515px;
+
+  :global {
+    .leaflet-container {
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+}

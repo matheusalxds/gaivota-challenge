@@ -1,0 +1,23 @@
+@import "../../../styles/settings/spaces";
+
+.spacer {
+  &--inline {
+    display: inline;
+  }
+
+  &--mt-lg-1 {
+    margin-top: $space * 1;
+  }
+
+  &--mt-lg-2 {
+    margin-top: $space * 2;
+  }
+
+  &--mr-lg-1 {
+    margin-right: $space * 1;
+  }
+
+  &--mr-lg-2 {
+    margin-right: $space * 2;
+  }
+}

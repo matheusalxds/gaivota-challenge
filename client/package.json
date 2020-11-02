@@ -22,8 +22,16 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "chart.js": "^2.9.4",
+    "classnames": "^2.2.6",
+    "leaflet": "^1.7.1",
+    "node-sass": "^4.14.1",
+    "querystring": "^0.2.0",
     "react": "^16.10.2",
+    "react-chartjs-2": "^2.10.0",
     "react-dom": "^16.10.2",
+    "react-leaflet": "^2.8.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
@@ -34,6 +42,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
     "prettier": "^1.17.1",
+    "prop-types": "^15.7.2",
     "react-app-rewired": "^2.1.4",
     "react-hot-loader": "^4.12.15"
   }

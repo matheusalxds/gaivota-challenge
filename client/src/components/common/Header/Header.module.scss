@@ -1,0 +1,17 @@
+@import '../../../styles/settings/spaces';
+@import '../../../styles/settings/colors';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $space * 5;
+  border-bottom: solid 1px $color-primary;
+
+  &__logo,
+  &__login {
+    span + span {
+      margin-left: $space * 2
+    }
+  }
+}
